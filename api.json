@@ -634,7 +634,7 @@
             "searchable": 1,
             "changeable": 1,
             "categories": [
-                "动作片",
+                "动漫",
                 "喜剧片",
                 "爱情片",
                 "科幻片",
@@ -660,7 +660,7 @@
             "searchable": 1,
             "changeable": 1,
             "categories": [
-                "动作片",
+                "动漫",
                 "喜剧片",
                 "爱情片",
                 "科幻片",
@@ -688,7 +688,7 @@
             "searchable": 1,
             "changeable": 1,
             "categories": [
-                "日剧",
+                "动漫",
                 "马泰剧",
                 "内地剧",
                 "欧美剧",
@@ -720,7 +720,7 @@
             "searchable": 1,
             "changeable": 1,
             "categories": [
-                "动作片",
+                "动漫",
                 "喜剧片",
                 "爱情片",
                 "科幻片",
@@ -754,7 +754,7 @@
             "searchable": 1,
             "changeable": 1,
             "categories": [
-                "动作片",
+                "动漫",
                 "喜剧片",
                 "爱情片",
                 "科幻片",
@@ -790,7 +790,7 @@
             "searchable": 1,
             "changeable": 1,
             "categories": [
-                "动作片",
+                "动漫",
                 "喜剧片",
                 "科幻片",
                 "恐怖片",
@@ -825,7 +825,7 @@
             "searchable": 1,
             "changeable": 1,
             "categories": [
-                "动作片",
+                "动漫",
                 "喜剧片",
                 "科幻片",
                 "恐怖片",
@@ -1606,14 +1606,14 @@
             "ext": "./XYQHiker/电影港.json"
         },
         {
-            "key": "好恐怖",
-            "name": "好恐怖｜磁力",
+            "key": "土豪影视",
+            "name": "土豪影视｜磁力",
             "type": 3,
             "api": "csp_XBPQ",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "./XBPQ/好恐怖.json"
+            "ext": "./XBPQ/土豪影视.json"
         },
         {
             "key": "小白网",
