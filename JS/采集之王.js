@@ -31,7 +31,7 @@ var rule = {
         function getClasses(item) {
             let classes = [];
             if (item.class_name && item.class_url) {
-                if (!/&|电影|电视剧|综艺|动漫[\u4E00-\u9FA5]+/.test(item.class_name)) {
+                if (!/&|动漫|电视剧|综艺|电影[\u4E00-\u9FA5]+/.test(item.class_name)) {
                     try {
                         item.class_name = ungzip(item.class_name)
                     } catch (e) {
