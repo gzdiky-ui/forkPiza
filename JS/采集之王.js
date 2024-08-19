@@ -51,13 +51,13 @@ var rule = {
             }
             return classes
         }
-        if (typeof(batchFetch) === 'function') {
+        if (typeof (batchFetch) === 'function') {
             rule.search_limit = 16;
             log('当前程序支持批量请求[batchFetch],搜索限制已设置为16');
         }
         let _url = rule.params;
         log(`传入参数:${_url}`);
-        if (_url && typeof(_url) === 'string' && /^(http|file)/.test(_url)) {
+        if (_url && typeof (_url) === 'string' && /^(http|file)/.test(_url)) {
             if (_url.includes('$')) {
                 let _url_params = _url.split('$');
                 _url = _url_params[0];
@@ -92,15 +92,15 @@ var rule = {
                         json1 = json1.filter(cl => !new RegExp(_obj.cate_exclude, 'i').test(cl.type_name));
                     }
                     rule.filter[_obj.type_id] = [{
-                            "key": "类型",
-                            "name": "类型",
-                            "value": json1.map(i => {
-                                return {
-                                    "n": i.type_name,
-                                    'v': i.type_id
-                                }
-                            })
-                        }
+                        "key": "类型",
+                        "name": "类型",
+                        "value": json1.map(i => {
+                            return {
+                                "n": i.type_name,
+                                'v': i.type_id
+                            }
+                        })
+                    }
                     ];
                     if (json1.length > 0) {
                         rule.filter_def[it.url] = {
@@ -109,14 +109,14 @@ var rule = {
                     }
                 } catch (e) {
                     rule.filter[it.url] = [{
-                            "key": "类型",
-                            "name": "类型",
-                            "value": [{
-                                    "n": "全部",
-                                    "v": ""
-                                }
-                            ]
+                        "key": "类型",
+                        "name": "类型",
+                        "value": [{
+                            "n": "全部",
+                            "v": ""
                         }
+                        ]
+                    }
                     ];
                 }
             });
@@ -144,7 +144,7 @@ var rule = {
                     it.vod_id = randomClass.type_id + '$' + it.vod_id;
                     it.vod_remarks = it.vod_remarks + '|' + randomClass.type_name;
                 });
-            } catch (e) {}
+            } catch (e) { }
         }
     }),
     一级: $js.toString(() => {
@@ -203,7 +203,7 @@ var rule = {
                 let start = (page - 1) * rule.search_limit;
                 let end = page * rule.search_limit;
                 let t1 = new Date().getTime();
-                let searchMode = typeof(batchFetch) === 'function' ? '批量' : '单个';
+                let searchMode = typeof (batchFetch) === 'function' ? '批量' : '单个';
                 log('start:' + start);
                 log('end:' + end);
                 log('搜索模式:' + searchMode);
@@ -221,7 +221,7 @@ var rule = {
                     });
                     let results_list = [];
                     let results = [];
-                    if (typeof(batchFetch) === 'function') {
+                    if (typeof (batchFetch) === 'function') {
                         let reqUrls = urls.map(it => {
                             return {
                                 url: it,
