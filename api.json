@@ -600,37 +600,21 @@
         {
             "key": "蚂蚁资源",
             "name": "蚂蚁｜采集",
-            "type": 1,
+            "type": 0,
             "api": "http://dsakf23665.com/api.php/provide/vod/from/NBY",
             "searchable": 1,
             "changeable": 1,
-            "playUrl": "json:http://121.62.61.51:6888//api//?key=qMdg1EDXPe9NH3bG0z&url="
+            "playUrl": "https://www.xinlangjiexi.com/m3u8/?url="
         },
         {
-            "key": "红牛资源",
-            "name": "红牛｜采集",
-            "type": 1,
-            "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
+            "key": "hnzy",
+            "name": "红牛资源",
+            "type": 0,
+            "api": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/xml/",
+            "playUrl": "https://www.hongniujiexi.com/m3u8/?url=",
             "searchable": 1,
-            "changeable": 1,
-            "categories": [
-                "动漫",
-                "喜剧片",
-                "爱情片",
-                "科幻片",
-                "恐怖片",
-                "剧情片",
-                "战争片",
-                "国产剧",
-                "港澳剧",
-                "日剧",
-                "欧美剧",
-                "台湾剧",
-                "泰剧",
-                "韩剧",
-                "纪录片",
-                "动漫电影"
-            ]
+            "quickSearch": 1,
+            "filterable": 1
         },
         {
             "key": "光速资源",
@@ -1992,6 +1976,11 @@
             "type": 0,
             "url": "https://jx.m3u8.tv/jiexi/?url="
         },
+        {
+            "name": "vipys",
+            "type": 0,
+            "url": "https://vipys.fun/player/?url="
+        },        
         {
             "name": "线路8",
             "type": 0,
